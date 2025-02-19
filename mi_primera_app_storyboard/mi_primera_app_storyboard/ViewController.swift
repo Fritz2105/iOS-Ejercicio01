@@ -8,9 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBAction func cuando_le_picamos(_ sender: Any) {
+        cajon_de_texto.text = entrada_de_texto.text
+        entrada_de_texto.text = ""
+    }
+    @IBOutlet weak var entrada_de_texto: UITextField!
+    
+    @IBOutlet weak var cajon_de_texto: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Ya cargó la pantalla inicial")
         // Do any additional setup after loading the view.
     }
 
